@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+    background: linear-gradient( rgb(233, 138, 138), rgb(150, 244, 150), rgb(119, 119, 234), rgb(171, 136, 136));
+}
+
+h1 {
+    font-size: 50px;
+    text-align: center;
+    color: rgb(57, 211, 211);
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.item {
+    height: 250px;
+    width: 300px;
+    border: 2px solid #fff;
+    flex-grow: 1;
+    flex-basis: 200;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
